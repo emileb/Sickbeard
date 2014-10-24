@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="SAB Servers" >
+        <PreferenceScreen
+            android:key="button_voicemail_setting_key"
+            android:persistent="false"
+            android:title="Server 1" >
+            <EditTextPreference
+                android:defaultValue=""
+                android:key="sab_name_0"
+                android:summary="Enter name of this server"
+                android:title="Name" />
+            <EditTextPreference
+                android:name="sab_host_0"
+                android:defaultValue=""
+                android:key="sab_host_0"
+                android:summary="Sab Host or IP address"
+                android:title="Host/IP Address" />
+            <EditTextPreference
+                android:name="sab_port_0"
+                android:defaultValue="0000"
+                android:inputType="number"
+                android:key="sab_port_0"
+                android:summary="Sab port number to be used"
+                android:title="Sab Port Number" />
+            <EditTextPreference
+                android:name="sab_api_0"
+                android:defaultValue=""
+                android:key="sab_api_0"
+                android:summary="Sab API Key"
+                android:title="Sab API Key" />
+
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:enabled="true"
+                android:key="sab_use_ssl_0"
+                android:shouldDisableView="true"
+                android:summary="Check to enable SSL for connection"
+                android:title="Use SSL" />
+
+            <Preference
+                android:key="sab_delete_0"
+                android:summary="Delete this server"
+                android:title="Delete" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="button_voicemail_setting_key"
+            android:persistent="false"
+            android:title="Server 2" >
+            <EditTextPreference
+                android:name="sab_name_1"
+                android:defaultValue=""
+                android:key="sab_name_1"
+                android:summary="Enter name of this server"
+                android:title="Name" />
+            <EditTextPreference
+                android:name="sab_host_1"
+                android:defaultValue=""
+                android:key="sab_host_1"
+                android:summary="Sab Host or IP address"
+                android:title="Host/IP Address" />
+            <EditTextPreference
+                android:name="sab_port_1"
+                android:defaultValue="0000"
+                android:inputType="number"
+                android:key="sab_port_1"
+                android:summary="Sab port number to be used"
+                android:title="Sab Port Number" />
+            <EditTextPreference
+                android:name="sab_api_1"
+                android:defaultValue=""
+                android:key="sab_api_1"
+                android:summary="Sab API Key"
+                android:title="Sab API Key" />
+
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:enabled="true"
+                android:key="sab_use_ssl_1"
+                android:shouldDisableView="true"
+                android:summary="Check to enable SSL for connection"
+                android:title="Use SSL" />
+
+            <Preference
+                android:key="sab_delete_1"
+                android:summary="Delete this server"
+                android:title="Delete" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <EditTextPreference
+        android:defaultValue="5"
+        android:inputType="number"
+        android:key="sab_refresh_rate"
+        android:summary="Refresh rate to update queue lists in seconds."
+        android:title="Refresh Rate" />
+
+</PreferenceScreen>
